@@ -1,0 +1,123 @@
+/* Ini file CSS */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.main-header {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #333;
+    text-align: center;
+}
+
+main {
+    max-width: 500px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+section {
+    padding: 10px 0;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.input-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.button-group {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+button {
+    flex: 1;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.bg-aquamarine {
+    background-color: #28a745;
+}
+
+.bg-aquamarine:hover {
+    background-color: #218838;
+}
+
+.bg-gray {
+    background-color: #6c757d;
+}
+
+.bg-gray:hover {
+    background-color: #5a6268;
+}
+
+.bg-green {
+    background-color: #17a2b8;
+}
+
+.bg-green:hover {
+    background-color: #138496;
+}
+
+.remark {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 20px;
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+}
