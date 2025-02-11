@@ -52,7 +52,8 @@
         <section>
             <div class="input-group">
                 <label for="cara-konversi">Cara Konversi:</label>
-                <input type="text" id="cara-konversi" readonly>
+                <textarea id="cara-konversi" readonly></textarea>
+                
             </div>
         </section>
 
@@ -76,33 +77,11 @@
 
     <footer>
         <p>Made by Fadiana</p>
+        <p>Belajar Coding with RevoU</p>
     </footer>
+    <script src="js/script.js"></script>
 
-    <script>
-        function convertTemperature() {
-            let celsius = document.getElementById("main-input").value;
-            if (celsius !== "") {
-                let fahrenheit = (celsius * 9/5) + 32;
-                document.getElementById("main-result").value = fahrenheit.toFixed(2);
-                document.getElementById("cara-konversi").value = celsius + "°C × (9/5) + 32 = " + fahrenheit.toFixed(2) + "°F";
-            }
-        }
-
-        function resetFields() {
-            document.getElementById("main-input").value = "";
-            document.getElementById("main-result").value = "";
-            document.getElementById("cara-konversi").value = "";
-        }
-
-        function reverseConversion() {
-            let fahrenheit = document.getElementById("main-result").value;
-            if (fahrenheit !== "") {
-                let celsius = (fahrenheit - 32) * 5/9;
-                document.getElementById("main-input").value = celsius.toFixed(2);
-                document.getElementById("cara-konversi").value = fahrenheit + "°F − 32 × (5/9) = " + celsius.toFixed(2) + "°C";
-            }
-        }
-    </script>
+    
 </body>
 
 </html>
