@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function convertTemperature() {
     let celsius = document.getElementById("main-input").value;
+    document.getElementById("cara-konversi").innerText = ""; // Reset cara konversi setiap kali konversi dilakukan
+    
     if (celsius !== "") {
         let fahrenheit = (celsius * 9/5) + 32;
         document.getElementById("main-result").value = fahrenheit.toFixed(2);
@@ -22,17 +24,16 @@ function resetFields() {
     document.getElementById("cara-konversi").innerText = "";
 }
 
-    function reverseConversion() {
-        let fahrenheit = document.getElementById("main-result").value;
-        
-        if (fahrenheit !== "") {
-            let celsius = (fahrenheit - 32) * 5 / 9;
-            document.getElementById("main-input").value = celsius.toFixed(2);
+function reverseConversion() {
+    let fahrenheit = document.getElementById("main-result").value;
+    document.getElementById("cara-konversi").innerText = ""; // Reset cara konversi setiap kali reverse dilakukan
     
-            // Menampilkan cara konversi di dalam textarea
-            document.getElementById("cara-konversi").value = 
-                `${fahrenheit}°F − 32 × (5/9) = ${celsius.toFixed(2)}°C`;
-        }
-    }
-    
+    if (fahrenheit !== "") {
+        let celsius = (fahrenheit - 32) * 5 / 9;
+        document.getElementById("main-input").value = celsius.toFixed(2);
 
+        // Menampilkan cara konversi di dalam innerText, bukan value
+        document.getElementById("cara-konversi").innerText = 
+            `${fahrenheit}°F − 32 × (5/9) = ${celsius.toFixed(2)}°C`;
+    }
+}
